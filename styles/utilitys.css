@@ -1,0 +1,27 @@
+.container{
+    --max-width: 375px;
+    width: min(var(--max-width), 100% - var(--px-screen) * 2);
+    margin: auto;
+}
+
+.screen-only{
+    display: initial;
+}
+
+.smartphone-none{
+        display: none;
+}
+
+@media (width >= 90em){
+    .container{
+        --max-width: 1440px;
+    }
+
+    .screen-only{
+        display: none;
+    }
+
+    .smartphone-none{
+        display: initial;
+}
+}

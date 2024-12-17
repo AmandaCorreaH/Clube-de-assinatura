@@ -1,0 +1,31 @@
+.book-kit-container{
+    padding-block: 6.5rem 5.5rem;
+
+    & .heading-kit div{
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        font: 700 1.5rem/120% var(--raleway);
+    }
+
+    & p{
+        text-align: center;
+        padding-top: 8px;
+        font: 500 0.87rem/140% var(--raleway);
+    }
+
+    & img{
+        width: 1.25rem;
+    }
+
+    & .slide-book{
+        margin-top: 4rem;
+
+        & .kit-book{
+            margin-top: 1.5rem;
+
+            
+        }
+    }
+}

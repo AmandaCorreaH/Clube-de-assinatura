@@ -1,0 +1,109 @@
+.container-detail{
+    margin-top: 14rem;
+
+    & .content-detail{
+        padding-block: 2rem;
+        width: 20rem;
+        
+        & > img{
+            margin-left: 15rem;
+            transform: rotate(15deg);
+        }
+
+        p{
+            font: 600 1rem/140% var(--raleway);
+            text-align: center;
+        }
+
+        & .images-detail{
+            position: relative;
+
+            & .first-img{
+                position: absolute;
+                transform: rotate(-30deg);
+                bottom: 10px;
+                z-index: -1;
+            }
+            & .second-img{
+                margin-left: 18rem;
+                transform: rotate(15deg);
+            }
+        }
+
+        & img{
+            width: 2rem;
+        }
+    }
+}
+
+@media (width >= 80em){
+    .container-detail{
+        margin-top: 35rem;
+    
+        & .content-detail{
+            padding-block: 2rem;
+            width: 75rem;
+
+            & .detail-book{
+                width: 5.5rem;
+                margin: auto;
+                opacity: 0;
+                transform: rotate(20deg);
+                
+                & img{
+                    width: 100%;
+                }
+            }
+
+            & .images-detail{
+                & img{
+                    width: 100%;
+                }
+
+                 .first-img{
+                    width: 5rem;
+                    transform: rotate(90deg);
+                    inset: 3rem 0 0 5rem;
+                 }
+
+                 .second-img{
+                    width: 4rem;
+                    position: absolute;
+                    inset: 0.62rem 55rem;
+                    transform: rotate(-15deg);
+                 }
+            }
+
+            p, span{
+                display: inline-block;
+                text-align: center;
+                font: 600 2rem/200% var(--raleway);
+                color: var(--text-label);
+                text-align: center;
+            }
+        }
+
+        & .content-detail:hover{
+
+            p{
+                color: var(--text-body);
+            }
+
+            .light-blue{
+                color: var(--blue-light);
+            }
+
+            .detail-book{
+                opacity: 1;
+                transition: 1s;
+                transform: scale(1.2);
+                transform: rotate(17deg);
+            }
+        }
+
+        .detail-book:hover{
+            transform: scale(1.5);
+            transform: rotate(23deg);
+        }
+    }
+}
